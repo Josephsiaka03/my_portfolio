@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0968d9458.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+           <img src="images/logo.jpeg" class="logo"> 
+           <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+           </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+           <p>Cyber Security</p> 
+           <h1>Hi, I'm <span> GOD’Salvation </span><br> Fechukwu Oguibe From United States</h1>
+        </div>
+       </div> 
+    </div>
+    <!-- ----------About Me-------------- -->
+    <div id="about">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+               <img src="images/user.jpeg"> 
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1> 
+               <p>I am currently a Computer Science PhD student at the University of Texas-San Antonio, United States. I also hold a master’s degree in computer science at the Texas Southern University. My primary research interest includes Cybersecurity, Cloud Security and IoT Security. These interests are motivated by the increasing need to secure all endpoints and domain of which technology is exponentially driving advances on. I have taken several course works (structured and unstructured) to horn my skills and participated on different projects (refer to CV).  I consider myself a perennial leaner with significant stamina to work on “not often” interesting things with aim of achieving success as the end goal. 
+                At spare time, I enjoy listening to music (Ludovico Einaudi, Lisa Gerrad, Phil Collins, Hanz Zimmer, Enya). Those remain my top tier for me since the last decade. I have great crush on soccer, cooking and piano. I once co-housed a sweet dog by name “BJ” and he turned out to be a beautiful blessing. Feel free to reach out to me on Godsalvation.ogu@gmail.com
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                   <ul>
+                    <li><span>Programming Languages & Databases</span><br>Python, Java, C++, C, HTML, CSS, SQL, PostgreSQL</li>
+                    <li><span>Cyber security</span><br>Blue Team, KeePass, POf, Nmap, Kill Chain, ATT&CK</li>
+                    <li><span>AI & Machine Learning</span><br>Statistical Modeling, Deep Neural Network, TensorFlow, Keras, PyTorch, Statistics</li>
+                    <li><span>Big Data & Data Analytics</span><br>Spark, Hadoop, MapReduce, NumPy, pandas, scikit-learn, Seaborn, Matplotlib</li>
+                    <li><span>Tools & Technologies</span><br>Virtualization, Docker, Kubernetes, Cloud (Google Cloud Platform, AWS), Network Traffic Analysis (Wireshark, Packet Tracer, Network Simulator), Linux (Ubuntu, Fedora, Red Hat), Git, Vagrant</li>
+                   </ul> 
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                     <li><span>Jan 2016 – July 2016</span><br> ICT Directorate(SIWES) Probabilistic Defense System Against Trigger-action  attacks</li>
+                     <li><span>Probabilistic Defense System Against Trigger-action attacks</span><br>Devised the decision of a defense agent to determine the ideal defense mechanism against a trigger-action attack as a Learning programming formulation </li>
+                     <li><span>Probabilistic Defense System Against Trigger-action  attacks</span><br>Utilizing Network tracing  to extract operational dependencies among nodes of the  attack graph to better comprehend how the attack transmits through the network</li>
+                     <li><span>Data Provenance Based Cyber Resilience of ICT Server</span><br>Examined methods of compiling whole-system data provenance in kernel space, involving the deployment of
+                        reliable computing base, tracepoints, and provenance hooks
+                        </li>
+                     <li><span>Data Provenance Based Cyber Resilience of ICT Server</span><br>Scrutinized online provenance decreasing techniques built upon garbage collection or system call aggregation methods as well as real-time provenance analysis methodologies established on the origination of low-level provenance charts</li>
+                     <li><span>Data Provenance Based Cyber Resilience of ICT Server</span><br>Adopted and configured ICMP discovery protocol on networks bandwidth to enable broadcast listening and identification of attacks.</li>
+                    </ul> 
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                     <li><span>San Antonio TX, Expected August 2025</span><br>University  of Texas San Antonio, College of Engineering, Ph.D., Computer Science </li>
+                     <li><span>Houston TX, December 2021</span><br>Texas Southern University, School of Engineering, Master of Science in Computer Science</li>
+                     <li><span>Jos, Nigeria. June 2017</span><br>University of Jos, School of Natural Science, Bachelor of Science in Computer Science</li>
+                    </ul> 
+                 </div>
+            </div>
+           </div> 
+        </div>
+    </div>
+    <!-- ---------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1> 
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Texas Southern University Graduate Assistant, Office of  Vice President of Research</h2><br>
+                   <p>Participated in the planning and implementation of various initiatives and programs such as MCH and LEAP</p><br>
+                   <p>Organized various symposiums which aimed at exploring different academic disciplines to derive rich research goals and tasks</p><br>
+                   <p>Involved in the evaluation of research use cases and deducing workable explanations or advances. Also, I helped in communicating feedback and milestones-based deliverables.</p><br>
+                   <p>Coordinated and collaborated with faculty members, staff, post-doctoral fellows, graduate students and undergraduate students across departments</p><br>
+                   <p>Collated all research funding data according to PIs, funding agencies, requisitions and reimbursement drafts.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>International Students Graduate Mentor,	Texas Southern University  Buddy Program;, under the guidance of Patricia Luckett|Director-PDSO</h2><br>
+                    <p>Mentored an international master’s Student: Own Mokuy Franciso.</p><br>
+                    <p>Supervised his academic progress and made recommendations where necessary</p><br>
+                    <p>Counseled mentee on academic entails and professional requirements</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Graduate Mentor, Student Academic Career Service Center (SASS) </h2><br>
+                    <p>Served the university community to implement various learning approaches aimed at helping students access tutorial supports</p><br>
+                    <p>Organized meetings and evaluates feedback from all university tutors.</p><br>
+                    <p>Offered recommendations on undergraduate students’ academic progress to SASS supervisors.</p><br>
+                    <p>Collaborated with a team to review tutor’s reports and concerns</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Technology use in young people</h3><br>
+                        <p>Children have more access to the internet in recent time than in the past. In counties with high rates of connectivity, young people aged 15-24 form a majority of persons online in comparison to other ages of the online population </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg">
+                    <div class="layer">
+                    <h3>Risk Mitigation Approaches</h3><br>
+                    <p>Parental control plays a vital role in determining the scope and level of internet usage amongst children and adolescents. The terminology that adequately describes parental guidance towards safe internet usage is the mediation. </p>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                    <h3>Cyberbullying</h3><br>
+                    <p>Although cyberbullying is being underestimated by many parents, it is a common form of bullying enhanced by advancement in technology and increase in the use of smart-phones.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------contact------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Godsalvation.ogu@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 979-703-9808</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+              </div>  
+              <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+              </div>  
+            </div>
+        </div>
+        <div class="copyright">
+          <p>copyright @ <i class="fa-solid fa-heart"></i> GOD’SALVATION</p>  
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+           sidemeu.style.right = "0"; 
+        }
+        function closemenu(){
+           sidemeu.style.right = "-200px"; 
+        }
+    </script>
+
+</body>
+</html>
