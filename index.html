@@ -6,22 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d0968d9458.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
        <div class="container">
-        <nav>
-           <img src="images/logo.jpeg" class="logo"> 
-           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-           </ul>
-           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <nav class="navbar navbar-expand-md navbar-dark head-nav">
+            <div class="container">
+                    <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpeg" class="logo">
+                </a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul id="sidemenu" class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="#header" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="header-text">
            <p>Cyber Security</p> 
@@ -43,7 +67,7 @@
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
@@ -154,14 +178,14 @@
                     <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                <a href="images/my-cv.pdf" download class="down-btn">Download CV</a>
               </div>  
               <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="down-btn">Submit</button>
                 </form>
               </div>  
             </div>
@@ -171,7 +195,8 @@
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script>
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontents = document.getElementsByClassName("tab-contents")
